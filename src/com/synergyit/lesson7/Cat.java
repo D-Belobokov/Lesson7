@@ -8,30 +8,26 @@ public class Cat implements User{
     private int rMax = random.nextInt(100);
     private int jMax = random.nextInt(100);
 
-    //public void Kiborg(){};
-    public void Human(int rMax,int jMax){
+    public Cat(){};
+
+    public Cat(int rMax,int jMax){
         this.rMax=rMax;
         this.jMax=jMax;
     }
-
     public int getrMax() {
         return rMax;
     }
-
     public int getjMax() {
         return jMax;
     }
-
     @Override
     public void run() {
         System.out.println("Кот бежит");
     }
-
     @Override
     public void jump() {
         System.out.println("Кот прыгнул");
     }
-
     @Override
     public String getName() {
         return "Кот";
